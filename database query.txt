@@ -1,0 +1,44 @@
+1. create database abcd;
+
+2. use abcd;
+
+3. create table student(id int primary key,name varchar(45),email varchar(45) unique,phoneNum varchar(45) unique,course varchar(45));
+
+
+4. insert into student (id,name,email,phoneNum,course) values(1,"rao","rao123@gmail.com","1234567891","b.tech");
+
+
+5. select * from student;
+
+6. select * from student where id=3;
+
+7. select name from student where id=3;
+
+8. update student set name="rao" where id=2;
+
+9. alter table student add address varchar(45);
+
+10. alter table student drop address;
+
+11. delete from student where id=2;
+
+12. drop table student;
+
+13. alter table student add age int;
+
+14. select * from student where age between 10 and 30;
+
+15.  select name,age from student where id=3;
+
+16. alter table student add city varchar(45);
+
+17. update student set city="delhi" where id=1;
+
+18. select name from student where city in(delhi,noida);
+ 
+19. select * from student where name like "a%";
+
+20. select * from student where name like "%a_";
+
+21. 
+
